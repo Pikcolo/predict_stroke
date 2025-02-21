@@ -1,1 +1,1 @@
-# predict_diabetic_retinopathy
+# predict_rice
