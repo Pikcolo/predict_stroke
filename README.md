@@ -1,1 +1,1 @@
-# predict_rice
+# predict_stroke
