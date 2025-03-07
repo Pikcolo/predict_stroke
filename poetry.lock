@@ -1,0 +1,829 @@
+[[package]]
+name = "absl-py"
+version = "2.1.0"
+description = "Abseil Python Common Libraries, see https://github.com/abseil/abseil-py."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "astunparse"
+version = "1.6.3"
+description = "An AST unparser for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = ">=1.6.1,<2.0"
+
+[[package]]
+name = "bcrypt"
+version = "4.3.0"
+description = "Modern password hashing for your software and your servers"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+tests = ["pytest (>=3.2.1,!=3.3.0)"]
+typecheck = ["mypy"]
+
+[[package]]
+name = "blinker"
+version = "1.9.0"
+description = "Fast, simple object-to-object and broadcast signaling"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[[package]]
+name = "cachelib"
+version = "0.13.0"
+description = "A collection of cache libraries in the same API interface."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "certifi"
+version = "2025.1.31"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "charset-normalizer"
+version = "3.4.1"
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "click"
+version = "8.1.8"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[[package]]
+name = "colorama"
+version = "0.4.6"
+description = "Cross-platform colored terminal text."
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
+
+[[package]]
+name = "dnspython"
+version = "2.7.0"
+description = "DNS toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.extras]
+dev = ["black (>=23.1.0)", "coverage (>=7.0)", "flake8 (>=7)", "hypercorn (>=0.16.0)", "mypy (>=1.8)", "pylint (>=3)", "pytest-cov (>=4.1.0)", "pytest (>=7.4)", "quart-trio (>=0.11.0)", "sphinx-rtd-theme (>=2.0.0)", "sphinx (>=7.2.0)", "twine (>=4.0.0)", "wheel (>=0.42.0)"]
+dnssec = ["cryptography (>=43)"]
+doh = ["h2 (>=4.1.0)", "httpcore (>=1.0.0)", "httpx (>=0.26.0)"]
+doq = ["aioquic (>=1.0.0)"]
+idna = ["idna (>=3.7)"]
+trio = ["trio (>=0.23)"]
+wmi = ["wmi (>=1.5.1)"]
+
+[[package]]
+name = "flake8"
+version = "3.9.2"
+description = "the modular source code checker: pep8 pyflakes and co"
+category = "dev"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
+
+[package.dependencies]
+mccabe = ">=0.6.0,<0.7.0"
+pycodestyle = ">=2.7.0,<2.8.0"
+pyflakes = ">=2.3.0,<2.4.0"
+
+[[package]]
+name = "flask"
+version = "3.1.0"
+description = "A simple framework for building complex web applications."
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+blinker = ">=1.9"
+click = ">=8.1.3"
+itsdangerous = ">=2.2"
+Jinja2 = ">=3.1.2"
+Werkzeug = ">=3.1"
+
+[package.extras]
+async = ["asgiref (>=3.2)"]
+dotenv = ["python-dotenv"]
+
+[[package]]
+name = "flask-bcrypt"
+version = "1.0.1"
+description = "Brcrypt hashing for Flask."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+bcrypt = ">=3.1.1"
+Flask = "*"
+
+[[package]]
+name = "flask-caching"
+version = "2.3.1"
+description = "Adds caching support to Flask applications."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+cachelib = ">=0.9.0"
+Flask = "*"
+
+[[package]]
+name = "flask-login"
+version = "0.6.3"
+description = "User authentication and session management for Flask."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+Flask = ">=1.0.4"
+Werkzeug = ">=1.0.1"
+
+[[package]]
+name = "flask-me"
+version = "1.0.2"
+description = "Flask extension that provides integration with MongoEngine and WTF model forms. This project is a forked of flask-mongoengine for compatable of new flask version"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+Flask = ">=2.0"
+mongoengine = ">=0.21"
+
+[package.extras]
+dev = ["black (==22.6.0)", "pre-commit", "pytest", "pytest-cov", "pytest-mock", "nox", "Pillow (>=7.0.0)", "blinker"]
+legacy = ["MarkupSafe (==2.0.1)"]
+legacy-dev = ["pytest", "pytest-cov", "pytest-mock", "Pillow (>=7.0.0)", "blinker"]
+toolbar = ["Flask-DebugToolbar (>=0.11.0)"]
+wtf = ["WTForms[email] (>=3.0.0)", "Flask-WTF (>=0.14.3)"]
+
+[[package]]
+name = "flask-wtf"
+version = "1.2.2"
+description = "Form rendering, validation, and CSRF protection for Flask with WTForms."
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+flask = "*"
+itsdangerous = "*"
+wtforms = "*"
+
+[package.extras]
+email = ["email-validator"]
+
+[[package]]
+name = "flatbuffers"
+version = "25.2.10"
+description = "The FlatBuffers serialization format for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "gast"
+version = "0.6.0"
+description = "Python AST that abstracts the underlying Python version"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
+
+[[package]]
+name = "google-pasta"
+version = "0.2.0"
+description = "pasta is an AST-based Python refactoring library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = "*"
+
+[[package]]
+name = "grpcio"
+version = "1.70.0"
+description = "HTTP/2-based RPC framework"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+protobuf = ["grpcio-tools (>=1.70.0)"]
+
+[[package]]
+name = "h5py"
+version = "3.13.0"
+description = "Read and write HDF5 files from Python"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+numpy = ">=1.19.3"
+
+[[package]]
+name = "idna"
+version = "3.10"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+all = ["ruff (>=0.6.2)", "mypy (>=1.11.2)", "pytest (>=8.3.2)", "flake8 (>=7.1.1)"]
+
+[[package]]
+name = "itsdangerous"
+version = "2.2.0"
+description = "Safely pass data to untrusted environments and back."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "jinja2"
+version = "3.1.5"
+description = "A very fast and expressive template engine."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+MarkupSafe = ">=2.0"
+
+[package.extras]
+i18n = ["Babel (>=2.7)"]
+
+[[package]]
+name = "joblib"
+version = "1.4.2"
+description = "Lightweight pipelining with Python functions"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "keras"
+version = "3.9.0"
+description = "Multi-backend Keras"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+absl-py = "*"
+h5py = "*"
+ml-dtypes = "*"
+namex = "*"
+numpy = "*"
+optree = "*"
+packaging = "*"
+rich = "*"
+
+[[package]]
+name = "libclang"
+version = "18.1.1"
+description = "Clang Python Bindings, mirrored from the official LLVM repo: https://github.com/llvm/llvm-project/tree/main/clang/bindings/python, to make the installation process easier."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "markdown"
+version = "3.7"
+description = "Python implementation of John Gruber's Markdown."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+docs = ["mkdocs (>=1.5)", "mkdocs-nature (>=0.6)", "mdx-gh-links (>=0.2)", "mkdocstrings", "mkdocs-gen-files", "mkdocs-section-index", "mkdocs-literate-nav"]
+testing = ["coverage", "pyyaml"]
+
+[[package]]
+name = "markdown-it-py"
+version = "3.0.0"
+description = "Python port of markdown-it. Markdown parsing, done right!"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+mdurl = ">=0.1,<1.0"
+
+[package.extras]
+benchmarking = ["psutil", "pytest", "pytest-benchmark"]
+code_style = ["pre-commit (>=3.0,<4.0)"]
+compare = ["commonmark (>=0.9,<1.0)", "markdown (>=3.4,<4.0)", "mistletoe (>=1.0,<2.0)", "mistune (>=2.0,<3.0)", "panflute (>=2.3,<3.0)"]
+linkify = ["linkify-it-py (>=1,<3)"]
+plugins = ["mdit-py-plugins"]
+profiling = ["gprof2dot"]
+rtd = ["mdit-py-plugins", "myst-parser", "pyyaml", "sphinx", "sphinx-copybutton", "sphinx-design", "sphinx-book-theme", "jupyter-sphinx"]
+testing = ["coverage", "pytest", "pytest-cov", "pytest-regressions"]
+
+[[package]]
+name = "markupsafe"
+version = "3.0.2"
+description = "Safely add untrusted strings to HTML/XML markup."
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[[package]]
+name = "mccabe"
+version = "0.6.1"
+description = "McCabe checker, plugin for flake8"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "mdurl"
+version = "0.1.2"
+description = "Markdown URL utilities"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "ml-dtypes"
+version = "0.4.1"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+numpy = [
+    {version = ">1.20", markers = "python_version < \"3.10\""},
+    {version = ">=1.21.2", markers = "python_version >= \"3.10\""},
+    {version = ">=1.23.3", markers = "python_version >= \"3.11\""},
+    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
+]
+
+[package.extras]
+dev = ["absl-py", "pytest", "pytest-xdist", "pylint (>=2.6.0)", "pyink"]
+
+[[package]]
+name = "mongoengine"
+version = "0.29.1"
+description = "MongoEngine is a Python Object-Document Mapper for working with MongoDB."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+pymongo = ">=3.4,<5.0"
+
+[package.extras]
+test = ["pytest", "pytest-cov", "coverage", "blinker", "Pillow (>=7.0.0)"]
+
+[[package]]
+name = "namex"
+version = "0.0.8"
+description = "A simple utility to separate the implementation of your Python package and its public API surface."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "numpy"
+version = "1.26.4"
+description = "Fundamental package for array computing in Python"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[[package]]
+name = "opt-einsum"
+version = "3.4.0"
+description = "Path optimization of einsum functions."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "optree"
+version = "0.14.1"
+description = "Optimized PyTree Utilities."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+typing-extensions = ">=4.5.0"
+
+[package.extras]
+jax = ["jax"]
+numpy = ["numpy"]
+torch = ["torch"]
+lint = ["ruff", "pylint", "mypy", "flake8", "flake8-bugbear", "flake8-comprehensions", "flake8-docstrings", "flake8-pyi", "flake8-simplify", "doc8", "pydocstyle", "pyenchant", "xdoctest", "cpplint", "pre-commit"]
+test = ["pytest", "pytest-cov", "pytest-xdist"]
+docs = ["sphinx", "sphinx-autoapi", "sphinx-autobuild", "sphinx-copybutton", "sphinx-rtd-theme", "sphinxcontrib-bibtex", "sphinx-autodoc-typehints", "docutils", "jax", "numpy", "torch"]
+benchmark = ["jax[cpu] (>=0.4.6,<0.5.0a0)", "torch (>=2.0,<2.6.0a0)", "torchvision", "dm-tree (>=0.1,<0.2.0a0)", "pandas", "tabulate", "termcolor"]
+
+[[package]]
+name = "packaging"
+version = "24.2"
+description = "Core utilities for Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "protobuf"
+version = "5.29.3"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "pycodestyle"
+version = "2.7.0"
+description = "Python style guide checker"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "pyflakes"
+version = "2.3.1"
+description = "passive checker of Python programs"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "pygments"
+version = "2.19.1"
+description = "Pygments is a syntax highlighting package written in Python."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+windows-terminal = ["colorama (>=0.4.6)"]
+
+[[package]]
+name = "pymongo"
+version = "4.11.2"
+description = "Python driver for MongoDB <http://www.mongodb.org>"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+dnspython = ">=1.16.0,<3.0.0"
+
+[package.extras]
+aws = ["pymongo-auth-aws (>=1.1.0,<2.0.0)"]
+docs = ["furo (==2024.8.6)", "readthedocs-sphinx-search (>=0.3,<1.0)", "sphinx-autobuild (>=2020.9.1)", "sphinx-rtd-theme (>=2,<4)", "sphinx (>=5.3,<9)", "sphinxcontrib-shellcheck (>=1,<2)"]
+encryption = ["certifi", "pymongo-auth-aws (>=1.1.0,<2.0.0)", "pymongocrypt (>=1.12.0,<2.0.0)"]
+gssapi = ["pykerberos", "winkerberos (>=0.5.0)"]
+ocsp = ["certifi", "cryptography (>=2.5)", "pyopenssl (>=17.2.0)", "requests (<3.0.0)", "service-identity (>=18.1.0)"]
+snappy = ["python-snappy"]
+test = ["pytest-asyncio (>=0.24.0)", "pytest (>=8.2)"]
+zstd = ["zstandard"]
+
+[[package]]
+name = "python-dotenv"
+version = "1.0.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
+name = "requests"
+version = "2.32.3"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+charset-normalizer = ">=2,<4"
+idna = ">=2.5,<4"
+urllib3 = ">=1.21.1,<3"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)"]
+use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
+
+[[package]]
+name = "rich"
+version = "13.9.4"
+description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
+category = "main"
+optional = false
+python-versions = ">=3.8.0"
+
+[package.dependencies]
+markdown-it-py = ">=2.2.0"
+pygments = ">=2.13.0,<3.0.0"
+typing-extensions = {version = ">=4.0.0,<5.0", markers = "python_version < \"3.11\""}
+
+[package.extras]
+jupyter = ["ipywidgets (>=7.5.1,<9)"]
+
+[[package]]
+name = "scikit-learn"
+version = "1.6.1"
+description = "A set of python modules for machine learning and data mining"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+joblib = ">=1.2.0"
+numpy = ">=1.19.5"
+scipy = ">=1.6.0"
+threadpoolctl = ">=3.1.0"
+
+[package.extras]
+build = ["numpy (>=1.19.5)", "scipy (>=1.6.0)", "cython (>=3.0.10)", "meson-python (>=0.16.0)"]
+install = ["numpy (>=1.19.5)", "scipy (>=1.6.0)", "joblib (>=1.2.0)", "threadpoolctl (>=3.1.0)"]
+benchmark = ["matplotlib (>=3.3.4)", "pandas (>=1.1.5)", "memory_profiler (>=0.57.0)"]
+docs = ["matplotlib (>=3.3.4)", "scikit-image (>=0.17.2)", "pandas (>=1.1.5)", "seaborn (>=0.9.0)", "memory_profiler (>=0.57.0)", "sphinx (>=7.3.7)", "sphinx-copybutton (>=0.5.2)", "sphinx-gallery (>=0.17.1)", "numpydoc (>=1.2.0)", "Pillow (>=7.1.2)", "pooch (>=1.6.0)", "sphinx-prompt (>=1.4.0)", "sphinxext-opengraph (>=0.9.1)", "plotly (>=5.14.0)", "polars (>=0.20.30)", "sphinx-design (>=0.5.0)", "sphinx-design (>=0.6.0)", "sphinxcontrib-sass (>=0.3.4)", "pydata-sphinx-theme (>=0.15.3)", "sphinx-remove-toctrees (>=1.0.0.post1)", "towncrier (>=24.8.0)"]
+examples = ["matplotlib (>=3.3.4)", "scikit-image (>=0.17.2)", "pandas (>=1.1.5)", "seaborn (>=0.9.0)", "pooch (>=1.6.0)", "plotly (>=5.14.0)"]
+tests = ["matplotlib (>=3.3.4)", "scikit-image (>=0.17.2)", "pandas (>=1.1.5)", "pytest (>=7.1.2)", "pytest-cov (>=2.9.0)", "ruff (>=0.5.1)", "black (>=24.3.0)", "mypy (>=1.9)", "pyamg (>=4.0.0)", "polars (>=0.20.30)", "pyarrow (>=12.0.0)", "numpydoc (>=1.2.0)", "pooch (>=1.6.0)"]
+maintenance = ["conda-lock (==2.5.6)"]
+
+[[package]]
+name = "scipy"
+version = "1.15.2"
+description = "Fundamental algorithms for scientific computing in Python"
+category = "main"
+optional = false
+python-versions = ">=3.10"
+
+[package.dependencies]
+numpy = ">=1.23.5,<2.5"
+
+[package.extras]
+test = ["pytest", "pytest-cov", "pytest-timeout", "pytest-xdist", "asv", "mpmath", "gmpy2", "threadpoolctl", "scikit-umfpack", "pooch", "hypothesis (>=6.30)", "array-api-strict (>=2.0,<2.1.1)", "cython", "meson", "ninja"]
+doc = ["sphinx (>=5.0.0,<8.0.0)", "intersphinx-registry", "pydata-sphinx-theme (>=0.15.2)", "sphinx-copybutton", "sphinx-design (>=0.4.0)", "matplotlib (>=3.5)", "numpydoc", "jupytext", "myst-nb", "pooch", "jupyterlite-sphinx (>=0.16.5)", "jupyterlite-pyodide-kernel"]
+dev = ["mypy (==1.10.0)", "typing-extensions", "types-psutil", "pycodestyle", "ruff (>=0.0.292)", "cython-lint (>=0.12.2)", "rich-click", "doit (>=0.36.0)", "pydevtool"]
+
+[[package]]
+name = "six"
+version = "1.17.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+
+[[package]]
+name = "tensorboard"
+version = "2.18.0"
+description = "TensorBoard lets you watch Tensors Flow"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+absl-py = ">=0.4"
+grpcio = ">=1.48.2"
+markdown = ">=2.6.8"
+numpy = ">=1.12.0"
+packaging = "*"
+protobuf = ">=3.19.6,<4.24.0 || >4.24.0"
+six = ">1.9"
+tensorboard-data-server = ">=0.7.0,<0.8.0"
+werkzeug = ">=1.0.1"
+
+[[package]]
+name = "tensorboard-data-server"
+version = "0.7.2"
+description = "Fast data loading for TensorBoard"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "tensorflow"
+version = "2.18.0"
+description = "TensorFlow is an open source machine learning framework for everyone."
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+absl-py = ">=1.0.0"
+astunparse = ">=1.6.0"
+flatbuffers = ">=24.3.25"
+gast = ">=0.2.1,<0.5.0 || >0.5.0,<0.5.1 || >0.5.1,<0.5.2 || >0.5.2"
+google-pasta = ">=0.1.1"
+grpcio = ">=1.24.3,<2.0"
+h5py = ">=3.11.0"
+keras = ">=3.5.0"
+libclang = ">=13.0.0"
+ml-dtypes = ">=0.4.0,<0.5.0"
+numpy = ">=1.26.0,<2.1.0"
+opt-einsum = ">=2.3.2"
+packaging = "*"
+protobuf = ">=3.20.3,<4.21.0 || >4.21.0,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<6.0.0dev"
+requests = ">=2.21.0,<3"
+six = ">=1.12.0"
+tensorboard = ">=2.18,<2.19"
+tensorflow-io-gcs-filesystem = {version = ">=0.23.1", markers = "python_version < \"3.12\""}
+termcolor = ">=1.1.0"
+typing-extensions = ">=3.6.6"
+wrapt = ">=1.11.0"
+
+[package.extras]
+and-cuda = ["nvidia-cublas-cu12 (==12.5.3.2)", "nvidia-cuda-cupti-cu12 (==12.5.82)", "nvidia-cuda-nvcc-cu12 (==12.5.82)", "nvidia-cuda-nvrtc-cu12 (==12.5.82)", "nvidia-cuda-runtime-cu12 (==12.5.82)", "nvidia-cudnn-cu12 (==9.3.0.75)", "nvidia-cufft-cu12 (==11.2.3.61)", "nvidia-curand-cu12 (==10.3.6.82)", "nvidia-cusolver-cu12 (==11.6.3.83)", "nvidia-cusparse-cu12 (==12.5.1.3)", "nvidia-nccl-cu12 (==2.21.5)", "nvidia-nvjitlink-cu12 (==12.5.82)"]
+
+[[package]]
+name = "tensorflow-io-gcs-filesystem"
+version = "0.37.1"
+description = "TensorFlow IO"
+category = "main"
+optional = false
+python-versions = "<3.13,>=3.7"
+
+[package.extras]
+tensorflow = ["tensorflow (>=2.16.0,<2.17.0)"]
+tensorflow-aarch64 = ["tensorflow-aarch64 (>=2.16.0,<2.17.0)"]
+tensorflow-cpu = ["tensorflow-cpu (>=2.16.0,<2.17.0)"]
+tensorflow-gpu = ["tensorflow-gpu (>=2.16.0,<2.17.0)"]
+tensorflow-rocm = ["tensorflow-rocm (>=2.16.0,<2.17.0)"]
+
+[[package]]
+name = "termcolor"
+version = "2.5.0"
+description = "ANSI color formatting for output in terminal"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.extras]
+tests = ["pytest", "pytest-cov"]
+
+[[package]]
+name = "threadpoolctl"
+version = "3.5.0"
+description = "threadpoolctl"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "typing-extensions"
+version = "4.12.2"
+description = "Backported and Experimental Type Hints for Python 3.8+"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "urllib3"
+version = "2.3.0"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.extras]
+brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
+h2 = ["h2 (>=4,<5)"]
+socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
+zstd = ["zstandard (>=0.18.0)"]
+
+[[package]]
+name = "werkzeug"
+version = "3.1.3"
+description = "The comprehensive WSGI web application library."
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+MarkupSafe = ">=2.1.1"
+
+[package.extras]
+watchdog = ["watchdog (>=2.3)"]
+
+[[package]]
+name = "wrapt"
+version = "1.17.2"
+description = "Module for decorators, wrappers and monkey patching."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "wtforms"
+version = "3.2.1"
+description = "Form validation and rendering for Python web development."
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+markupsafe = "*"
+
+[package.extras]
+email = ["email-validator"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "ceef4cf0c0e3d8eddb146f16862b1df1119c7d1ae29b86daaa2980d9c395aea3"
+
+[metadata.files]
+absl-py = []
+astunparse = []
+bcrypt = []
+blinker = []
+cachelib = []
+certifi = []
+charset-normalizer = []
+click = []
+colorama = []
+dnspython = []
+flake8 = []
+flask = []
+flask-bcrypt = []
+flask-caching = []
+flask-login = []
+flask-me = []
+flask-wtf = []
+flatbuffers = []
+gast = []
+google-pasta = []
+grpcio = []
+h5py = []
+idna = []
+itsdangerous = []
+jinja2 = []
+joblib = []
+keras = []
+libclang = []
+markdown = []
+markdown-it-py = []
+markupsafe = []
+mccabe = []
+mdurl = []
+ml-dtypes = []
+mongoengine = []
+namex = []
+numpy = []
+opt-einsum = []
+optree = []
+packaging = []
+protobuf = []
+pycodestyle = []
+pyflakes = []
+pygments = []
+pymongo = []
+python-dotenv = []
+requests = []
+rich = []
+scikit-learn = []
+scipy = []
+six = []
+tensorboard = []
+tensorboard-data-server = []
+tensorflow = []
+tensorflow-io-gcs-filesystem = []
+termcolor = []
+threadpoolctl = []
+typing-extensions = []
+urllib3 = []
+werkzeug = []
+wrapt = []
+wtforms = []

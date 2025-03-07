@@ -1,0 +1,3 @@
+#!/bin/sh
+
+FLASK_DEBUG=true poetry run predict_stroke-web -H 0.0.0.0 -d

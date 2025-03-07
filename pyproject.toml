@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "predict_stroke"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+Flask = "^3.1.0"
+Flask-Login = "^0.6.3"
+mongoengine = "^0.29.1"
+Werkzeug = "^3.1.3"
+flask-me = "^1.0.2"
+Flask-Caching = "^2.3.1"
+Flask-Bcrypt = "^1.0.1"
+Flask-WTF = "^1.2.2"
+numpy = "^1.26"
+tensorflow = "^2.18.0"
+scikit-learn = "^1.6.1"
+joblib = "^1.4.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+
+[tool.poetry.scripts]
+predict_stroke-web = "predict_stroke.cmd.web:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
