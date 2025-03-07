@@ -1,9 +1,37 @@
 {% extends "base/default-page.html" %}
 
 {% block content %}
-<div class="container ui">
+<div class="container ui" style="margin-bottom: 1em">
 	<div class="ui segment">
-		<h1>ตรวจสอบความเสี่ยงที่จะเป็นโรคหลอดเลือดสมอง</h1>
+    <h1 style="font-size: 2em; text-align: center; margin-bottom: 20px;">โรคหลอดเลือดสมอง</h1>
+    <p>โรคหลอดเลือดสมอง หรือ Stroke คือ ภาวะสมองขาดเลือดที่เกิดจากหลอดเลือดสมองตีบ/อุดตันหรือมีเลือดออกในสมอง หรืออาการเส้นเลือดในสมองตีบ ทำให้เลือดไม่สามารถไปเลี้ยงสมองได้ ทำให้เซลล์สมองขาดออกซิเจน ส่งผลให้สมองตาย</p>
+    
+    <h3 style="font-size: 1.5em; margin-top: 20px;">ปัจจัยเสี่ยงที่ทำให้โอกาสการเกิดโรคหลอดเลือดสมอง</h3>
+    <ul style="padding-left: 20px;">
+        <li>ภาวะความดันโลหิตสูง</li>
+        <li>เบาหวาน</li>
+        <li>โรคหัวใจ</li>
+        <li>อายุ — ผู้สูงวัยอายุ 55 หรือมากกว่า มีโอกาสเสี่ยงสูงกว่าในการเกิดโรคมากกว่าคนหนุ่มสาว</li>
+        <li>เพศ — เพศชายมีความเสี่ยงสูงมากกว่าเพศหญิงในการเกิดโรคหลอดเลือดสมอง</li>
+    </ul>
+
+    <h3 style="font-size: 1.5em; margin-top: 20px;">แนวทางการป้องกันโรคหลอดเลือดสมอง</h3>
+    <ul style="padding-left: 20px;">
+        <li>ปรับระดับความดันโลหิตให้อยู่ในระดับปกติ</li>
+        <li>หลีกเลี่ยงการรับประทานอาหารที่มีคลอเรสเตอรอลและไขมันอิ่มตัวสูง</li>
+        <li>เลิกสูบบุหรี่</li>
+        <li>ควบคุมอาการของโรคเบาหวาน</li>
+        <li>ควบคุมน้ำหนักให้อยู่ในเกณฑ์ปกติ</li>
+        <li>รับประทานผลไม้และผักให้มากยิ่งขึ้น</li>
+        <li>ออกกำลังกายอย่างสม่ำเสมอ</li>
+        <li>ลดการดื่มสุรา</li>
+        <li>เข้ารับการรักษาภาวะหยุดหายใจขณะหลับ</li>
+        <li>หลีกเลี่ยงการใช้สารเสพติด</li>
+    </ul>
+	</div>
+
+	<div class="ui segment">
+		<h2>ตรวจสอบความเสี่ยงที่จะเป็นโรคหลอดเลือดสมอง</h2>
 		<form class="ui form" method="POST">
 			<div class="two fields">
 				<div class="field">
@@ -60,22 +88,18 @@
 			</div>
 
 			<div class="ui right aligned container">
-				<button class="ui primary button" type="submit">ทำนาย</button>
+				<button class="ui primary button" type="submit">ยืนยัน</button>
 			</div>
 		</form>
 	</div>
 
-	<div class="ui segment">
-    <h3>
-        ผลการตรวจสอบโอกาสที่จะเสี่ยงเป็นโรคหลอดเลือดสมอง: 
-        <span id="prediction-value">
-            {% if prediction is not none %}
-                {{ "%.2f"|format(prediction) }}
-            {% endif %}
-        </span> %
-    </h3>
-</div>
-
+	<div class="ui segment" style="margin-bottom: 1em; padding-bottom: 20px;">
+    <h3>ผลการตรวจสอบโอกาสที่จะเสี่ยงเป็นโรคหลอดเลือดสมอง: 
+			{% if prediction is not none %}
+        {{ "%.2f"|format(prediction) }}
+      {% endif %} %
+		</h3>
+	</div>
 </div>
 {% endblock content %}
 
