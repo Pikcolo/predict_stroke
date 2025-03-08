@@ -42,4 +42,4 @@ def index():
         # ส่งผลการทำนายไปที่หน้าเว็บ
         return render_template("site/index.html", prediction=prediction)
     
-    return render_template("site/index.html")
+    return render_template("site/index.html", prediction=None)
