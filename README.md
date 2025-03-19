@@ -17,6 +17,7 @@ Mini project นี้ใช้โมเดล ANN ในการทำนา�
   - การสูบบุหรี่
 
   เมื่อกรอกข้อมูลเหล่านี้แล้วกดยืนยันโมเดลก็จะทำการทำนายโอกาสเสี่ยงที่จะเป็นโรคหลอดเลือดสมองโดยให้ผลออกมาเป็น percent
+  ซึ่งจะใช้ model ANN ในการทำโปรแกรมนี้ และโดยจุดเด่นจะมีการทำ Data Augmentation เองโดยเทียบกับแบบ SMOTE 
   
   Dataset from [Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data)
   This website will use a model to predict the risk of stroke using the following features:
@@ -30,6 +31,7 @@ Mini project นี้ใช้โมเดล ANN ในการทำนา�
   - Smoking
     
   Once you enter this information and click confirm, the model will predict the risk of stroke and provide the result as a percentage.
+  Which will use the ANN model to make this program and the highlight is that it will do Data Augmentation itself by comparing with the SMOTE model.
 
   ![stroke_webpage](https://github.com/user-attachments/assets/d7e47324-fe76-49c7-a395-44807e936187)
 
@@ -57,13 +59,7 @@ Mini project นี้ใช้โมเดล ANN ในการทำนา�
    
    **for Windows**
    
-   Download and install Node.js from the [nodejs.org](https://nodejs.org/en).
-
-   Verify the installation by running:
-    ```
-    node -v
-    npm -v
-    ```
+   Use wsl and follow the linux steps.
    
    **for Linux**
    
